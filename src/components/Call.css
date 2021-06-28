@@ -1,0 +1,116 @@
+.call {
+  height: 100%;
+  position: relative;
+}
+
+.call--background {
+  height: 100%;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-color-item);
+}
+
+.call--background--media {
+  object-fit: cover;
+  height: 100%;
+  object-position: center;
+  width: 100%;
+}
+
+.call--overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(
+    0deg,
+    rgba(2, 0, 36, 0.8029586834733894) 0%,
+    rgba(0, 0, 0, 0) 24%,
+    rgba(0, 0, 0, 0) 75%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 1fr;
+  justify-content: space-between;
+}
+
+.call--overlay--footer {
+  display: grid;
+  grid-template-rows: auto auto;
+  margin-bottom: 30px;
+  gap: 20px;
+}
+
+.call--overlay--footer--button {
+  background-color: var(--bg-button-call);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: none;
+  color: var(--text-color-white);
+  font-size: 1.3rem;
+  cursor: pointer;
+  box-shadow: var(--image-shadow);
+}
+
+.call--overlay--footer--button--hang-up {
+  background-color: var(--bg-button-hangUp);
+}
+
+.call--overlay--footer--actions {
+  display: grid;
+  justify-content: center;
+  grid-auto-flow: column;
+  gap: 20px;
+}
+
+.call--overlay--footer--yourself {
+  width: 130px;
+  height: 180px;
+  justify-self: end;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-right: 10px;
+  box-shadow: var(--image-shadow);
+}
+
+.call--overlay--footer--yourself--media {
+  object-fit: cover;
+  height: 100%;
+  object-position: center;
+  width: 100%;
+}
+
+.call--overlay--header {
+  padding: 30px;
+}
+
+.call--overlay--header--status {
+  color: var(--text-color-white);
+  font-size: 1.4rem;
+}
+
+.call--overlay--footer--button--answer {
+  background-color: var(--icon-action-color);
+}
+
+.call--background--contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  color: var(--text-color-white);
+  margin-bottom: 40px;
+}
+
+.call--background--contact--image {
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  border-radius: 50%;
+  box-shadow: var(--image-shadow);
+}

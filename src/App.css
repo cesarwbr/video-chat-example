@@ -1,0 +1,10 @@
+.App {
+  margin: 0 auto;
+  height: 100vh;
+  border-radius: 20px;
+  width: 100%;
+  max-width: var(--max-width);
+  max-height: var(--max-height);
+  background-color: var(--bg-color);
+  overflow: hidden;
+}

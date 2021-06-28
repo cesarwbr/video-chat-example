@@ -1,0 +1,57 @@
+.contacts {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  height: 100%;
+  padding: 20px;
+}
+
+.contacts > h1 {
+  color: var(--text-color-white);
+  font-size: 1.5rem;
+}
+
+.contacts--list {
+  overflow: auto;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 20px;
+}
+
+.contacts--contact {
+  background-color: var(--bg-color-item);
+  border-radius: 4px;
+  padding: 10px 20px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+}
+
+.contacts--contact:hover {
+  background-color: var(--bg-color-item-selected);
+}
+
+.contacts--contact--avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.contacts--contact--name {
+  color: var(--text-color-item);
+  font-size: 0.9rem;
+}
+
+.contacts--contact--info {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 12px;
+}
+
+.contacts--contact--icon {
+  color: var(--icon-action-color);
+}
